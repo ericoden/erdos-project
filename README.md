@@ -15,5 +15,5 @@ We download data a year's worth of posts from **r/personalfinance** (around 130K
 * number of comments
 * score
 
-The resulting data frame has a little over 100MiB of data. Selecting some threshold based on the score and/or number of comments, we can partition the data into viral and nonviral posts. Then, based on the temporal and language features, we hope to develop a machine learning model that can predict whether a post will go viral.
+The resulting data frame has a little over 100MiB of data. Selecting some threshold based on the score and/or number of comments, we can partition the data into viral and nonviral posts. Then, based on the temporal, language, user, and network features, we hope to develop a machine learning model that can predict whether a post will go viral.
 
