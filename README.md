@@ -15,5 +15,7 @@ Selecting the subreddit [**r/personalfinance**](https://www.reddit.com/r/persona
 * number of comments
 * score
 
-The resulting data frame has a little over 100MiB of data. Selecting some threshold based on the score and/or number of comments, we can partition the data into viral and nonviral posts. Then, based on the temporal, language, user, and network features, we hope to develop a machine learning model that can predict whether a post will go viral.
+The resulting data frame has a little over 100MiB of data. Selecting some threshold based on the score and/or number of comments, we can make this into a classification problem by partitioning the data into viral and nonviral posts. Then, based on the temporal, language, user, and network features, we hope to develop a machine learning model that can predict whether a post will go viral.
+
+User features (such as total number of posts/comments) and network features (i.e. connections between users, e.g., number of comments on each other's posts) will require augmenting the data set. 
 
