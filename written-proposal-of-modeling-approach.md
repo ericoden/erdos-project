@@ -26,7 +26,7 @@ We have downloaded data for all posts to the subreddit r/personalfinance from Oc
 
 We decided to measure the interest of a post as a linear combination of the score and the number of comments. Specifically, we calculate the mean score over the data set, $\mu_s$ and the mean number of comments over the data set, $\mu_c$, and then, for each post, with score $s$ and number of comments $c$, the "virality score" is defined:
 
-$$\frac{s}{\mu_s} + \frac{c}{\mu_c}$$
+\\[ \frac{s}{\mu_s} + \frac{c}{\mu_c} \\]
 
 
 ## Model
