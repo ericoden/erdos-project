@@ -31,6 +31,26 @@ We download data a year's worth of posts from **r/personalfinance** (around 130K
 
 ## Data Exploration
 
+We create plots concerning
+
+* Basic Statistics of Score and Number of Comments
+* The Relationship between Score and Number of Comments
+* Temporal Data
+
 ## Data Preparation
 
+Along with cleaning the data, we add the following derived features:
+* title length (number of characters)
+* body text length
+* account age (days)
+* minutes into the day the post was made
+* day of week
+* whether it is the morning
+* whether it is the weekend
+
 ## Machine Learning
+
+The notebook we used to experiment with various models.
+
+We use a pretrained word2vec model (GoogleNews) to generate 300-dimensional "document vectors" for each title and each body text. We then use Principle Components Analysis to convert these to 15-dimensional vectors. We thus add 30 columns to the data, attempting to capture semantic information in the posts. We then experiment with various algorithms, with the most success coming from XGBoost.
+
