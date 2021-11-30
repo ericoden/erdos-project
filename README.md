@@ -4,6 +4,15 @@
 
 Given a financial forum of our choice, we must predict the interest of a post. We must define what "interest" means, and it should be something directly related to the post itself. Selecting the subreddit [**r/personalfinance**](https://www.reddit.com/r/personalfinance/), one readily available measure of the interest is the score (# upvotes - # downvotes). 
 
+Our work is partitioned into the following steps, with corresponding Jupyter Notebooks:
+
+* Data Collection
+* Data Exploration
+* Data Preparation
+* Machine Learning
+
+## Data Collection
+
 We download data a year's worth of posts from **r/personalfinance** (around 130K posts total). We collect the following information about each post:
 
 * id
@@ -16,4 +25,3 @@ We download data a year's worth of posts from **r/personalfinance** (around 130K
 * score
 
 The resulting data frame has a little over 100MiB of data. Selecting some threshold based on the score and/or number of comments, we can partition the data into viral and nonviral posts. Then, based on the temporal and language features, we hope to develop a machine learning model that can predict whether a post will go viral.
-
