@@ -28,3 +28,9 @@ We download data a year's worth of posts from **r/personalfinance** (around 130K
 * number of submissions the author had made prior to the post
 * max and median scores of the author's comments prior to the post
 * max and median scores of the author's submissions prior to the post
+
+## Data Exploration
+
+## Data Preparation
+
+## Machine Learning
